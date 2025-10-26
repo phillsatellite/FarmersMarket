@@ -1,0 +1,102 @@
+{
+  "Products": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "price": 1.25,
+      "description": "Crisp aascasnd sweet, perfect fwefwefor snacking or baking.",
+      "image": "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "BananaTest",
+      "price": 12,
+      "description": "A tropical fruit rich in potassium and fiber.",
+      "image": "https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "Orange",
+      "price": 1.1,
+      "description": "Juicy and tangy, full of vitamin C.",
+      "image": "https://images.pexels.com/photos/161559/background-bitter-breakfast-bright-161559.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Strawberry",
+      "price": 2.5,
+      "description": "Sweet and fragrant, great for desserts or smoothies.",
+      "image": "https://images.pexels.com/photos/46174/strawberries-berries-fruit-freshness-46174.jpeg"
+    },
+    {
+      "id": "5",
+      "name": "Blueberry",
+      "price": 3,
+      "description": "Tiny berries packed with antioxidants and flavor.",
+      "image": "https://images.pexels.com/photos/1120575/pexels-photo-1120575.jpeg"
+    },
+    {
+      "id": "6",
+      "name": "Grapes",
+      "price": 2.2,
+      "description": "Seedless and sweet, perfect for snacking.",
+      "image": "https://images.pexels.com/photos/23042/pexels-photo.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Watermscsscscselon",
+      "price": 5,
+      "description": "Refreshing and juicy, ideal for summer days.",
+      "image": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg"
+    },
+    {
+      "id": "8",
+      "name": "Pineapple",
+      "price": 3.75,
+      "description": "Tropical fruit with a tangy sweetness.",
+      "image": "https://images.pexels.com/photos/947879/pexels-photo-947879.jpeg"
+    },
+    {
+      "id": "9",
+      "name": "Mango",
+      "price": 2,
+      "description": "Smooth and juicy with a hint of tropical flavor.",
+      "image": "https://images.pexels.com/photos/2363347/pexels-photo-2363347.jpeg"
+    },
+    {
+      "id": "10",
+      "name": "Peach",
+      "price": 1.8,
+      "description": "Soft and fuzzy with a sweet aroma.",
+      "image": "https://images.pexels.com/photos/6157049/pexels-photo-6157049.jpeg"
+    },
+    {
+      "id": "11",
+      "name": "Tomato",
+      "price": 1.2,
+      "description": "Juicy and versatile, great in salads and sauces.",
+      "image": "https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg"
+    },
+    {
+      "id": "12",
+      "name": "Carrot",
+      "price": 0.9,
+      "description": "Crunchy and rich in beta-carotene.",
+      "image": "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg"
+    },
+    {
+      "id": "13",
+      "name": "Broccoli",
+      "price": 1.5,
+      "description": "Nutrient-packed green veggie perfect for steaming.",
+      "image": "https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg"
+    },
+    {
+      "id": "14",
+      "name": "Spinach",
+      "price": 1.3,
+      "description": "Leafy green loaded with iron and vitamins.",
+      "image": "https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg"
+    }
+  ]
+}
