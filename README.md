@@ -1,10 +1,10 @@
 Features
-🛍️ Browse products in a responsive grid layout
-🔍 Search products by name
-✏️ Edit product details (name, description, price)
-🗑️ Delete products
-➕ Admin portal for adding new products
-💾 JSON Server backend for data persistence
+- 🛍️ Browse products in a responsive grid layout
+- 🔍 Search products by name
+- ✏️ Edit product details (name, description, price)
+- 🗑️ Delete products
+- ➕ Admin portal for adding new products
+- 💾 JSON Server backend for data persistence
 
 Installation
 1. Clone the repository
