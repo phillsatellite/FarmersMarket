@@ -19,13 +19,13 @@
   padding: 12px 20px;
   border-radius: 25px;
   border: none;
-  background-color: #5a4a3a;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.732);
   font-size: 16px;
+  color: black;
 }
 
 .search-input::placeholder {
-  color: #c9b5a0;
+  color: #7e7163;
 }
 
 .locations {
@@ -107,7 +107,7 @@
 
 .modal-content h2 {
   margin-bottom: 20px;
-  color: #2a2a2a;
+  color: #ffffff;
 }
 
 .edit-form .form-group {
@@ -128,15 +128,9 @@
   border: 1px solid #8a7a6a;
   border-radius: 4px;
   font-size: 16px;
-  background-color: white !important;
-  color: #2a2a2a !important;
+  background-color: white;
+  color: #2a2a2a ;
   box-sizing: border-box;
-}
-
-.edit-form input[type="text"],
-.edit-form input[type="number"] {
-  color: #2a2a2a !important;
-  -webkit-text-fill-color: #2a2a2a !important;
 }
 
 .edit-form textarea {
@@ -146,8 +140,9 @@
 
 .edit-form input:focus,
 .edit-form textarea:focus {
-  outline: 2px solid #5a4a3a;
-  border-color: #5a4a3a;
+  outline: none;
+  border-color: #000000;
+  box-shadow: noen
 }
 
 .modal-buttons {
@@ -185,7 +180,7 @@
 }
 
 .cancel-btn {
-  background-color: #8a4a4a;
+  background-color: #757575;
   color: white;
 }
 
