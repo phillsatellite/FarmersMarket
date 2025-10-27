@@ -13,4 +13,4 @@ Installation
 
 Running the application 
 1. Start the JSON server - npx json-server --watch db.json --port 3001
-2. Start the React application - npm start
+2. Start the React application - npm run dev
