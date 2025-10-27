@@ -6,7 +6,7 @@ function useProducts() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_URL = 'http://localhost:3000/Products';
+  const API_URL = 'http://localhost:3001/Products';
 
   //GET - Fetch all products
   const fetchProducts = async () => {
