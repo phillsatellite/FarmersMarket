@@ -24,7 +24,6 @@ function Shop() {
     setEditForm(formData);
   };
 
-  //Updates the edit form state as user types in input fields
   const handleEditChange = (e) => {
     const { name, value } = e.target;
     console.log('Input changed:', name, value);
@@ -38,7 +37,6 @@ function Shop() {
     });
   };
 
-  //Saves the edited product data to the backend
   const handleSaveEdit = async () => {
     try {
       await updateProduct(editingProduct.id, {
@@ -52,7 +50,6 @@ function Shop() {
     }
   };
 
-  //Deletes the product after user confirmation
   const handleDelete = async () => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
@@ -68,41 +65,43 @@ function Shop() {
     setEditingProduct(null);
   };
 
-  if (loading) return <div className="shop"><p>Loading products...</p></div>;
-  if (error) return <div className="shop"><p>Error: {error}</p></div>;
+  if (loading) return <div className="shop" data-testid="shop-loading"><p>Loading products...</p></div>;
+  if (error) return <div className="shop" data-testid="shop-error"><p>Error: {error}</p></div>;
 
   return (
-    <div className="shop">
-      <div className="search-sidebar">
+    <div className="shop" data-testid="shop-page">
+      <div className="search-sidebar" data-testid="search-sidebar">
         <input
           type="text"
           placeholder="Search"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search-input"
+          data-testid="search-input"
         />
       </div>
-      
-      <div className="products-grid">
+
+      <div className="products-grid" data-testid="products-grid">
         {filteredProducts.map(product => (
-          <div 
-            key={product.id} 
+          <div
+            key={product.id}
             className="product-card"
             onClick={() => handleProductClick(product)}
+            data-testid="product-card"
           >
-            <img src={product.image} alt={product.name} className="product-image" />
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
-            <p className="price">${typeof product.price === 'number' ? product.price.toFixed(2) : product.price}</p>
+            <img src={product.image} alt={product.name} className="product-image" data-testid="product-image" />
+            <h3 data-testid="product-name">{product.name}</h3>
+            <p data-testid="product-description">{product.description}</p>
+            <p className="price" data-testid="product-price">${typeof product.price === 'number' ? product.price.toFixed(2) : product.price}</p>
           </div>
         ))}
       </div>
 
       {editingProduct && (
-        <div className="modal-overlay" onClick={handleCancelEdit}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-overlay" onClick={handleCancelEdit} data-testid="modal-overlay">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()} data-testid="modal-content">
             <h2>Edit Product</h2>
-            <div className="edit-form">
+            <div className="edit-form" data-testid="edit-form">
               <div className="form-group">
                 <label>Product Name</label>
                 <input
@@ -111,6 +110,7 @@ function Shop() {
                   value={editForm.name}
                   onChange={handleEditChange}
                   placeholder="Enter product name"
+                  data-testid="edit-input-name"
                 />
               </div>
               <div className="form-group">
@@ -121,6 +121,7 @@ function Shop() {
                   onChange={handleEditChange}
                   rows="3"
                   placeholder="Enter description"
+                  data-testid="edit-input-description"
                 />
               </div>
               <div className="form-group">
@@ -132,12 +133,13 @@ function Shop() {
                   value={editForm.price}
                   onChange={handleEditChange}
                   placeholder="Enter price"
+                  data-testid="edit-input-price"
                 />
               </div>
-              <div className="modal-buttons">
-                <button onClick={handleSaveEdit} className="save-btn">Save</button>
-                <button onClick={handleDelete} className="delete-btn">Delete</button>
-                <button onClick={handleCancelEdit} className="cancel-btn">Cancel</button>
+              <div className="modal-buttons" data-testid="modal-buttons">
+                <button onClick={handleSaveEdit} className="save-btn" data-testid="save-btn">Save</button>
+                <button onClick={handleDelete} className="delete-btn" data-testid="delete-btn">Delete</button>
+                <button onClick={handleCancelEdit} className="cancel-btn" data-testid="cancel-btn">Cancel</button>
               </div>
             </div>
           </div>

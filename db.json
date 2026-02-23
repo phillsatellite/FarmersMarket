@@ -1,27 +1,6 @@
 {
   "Products": [
     {
-      "id": "1",
-      "name": "Apple",
-      "price": 1.25,
-      "description": "Crisp aascasnd sweet, perfect fwefwefor snacking or baking.",
-      "image": "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg"
-    },
-    {
-      "id": "2",
-      "name": "BananaTest",
-      "price": 12,
-      "description": "A tropical fruit rich in potassium and fiber.",
-      "image": "https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg"
-    },
-    {
-      "id": "3",
-      "name": "Orange",
-      "price": 1.1,
-      "description": "Juicy and tangy, full of vitamin C.",
-      "image": "https://images.pexels.com/photos/161559/background-bitter-breakfast-bright-161559.jpeg"
-    },
-    {
       "id": "4",
       "name": "Strawberry",
       "price": 2.5,
@@ -97,6 +76,13 @@
       "price": 1.3,
       "description": "Leafy green loaded with iron and vitamins.",
       "image": "https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg"
+    },
+    {
+      "id": "1fe2",
+      "name": "Fresh Peaches",
+      "description": "Juicy summer peaches",
+      "image": "https://example.com/peaches.jpg",
+      "price": 3.99
     }
   ]
 }

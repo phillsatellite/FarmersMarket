@@ -12,7 +12,6 @@ function AdminPortal() {
   });
   const [message, setMessage] = useState('');
 
-  //Updates form state when user types in any input field
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -20,11 +19,9 @@ function AdminPortal() {
     });
   };
 
-  //Handles form submission to create a new product
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-       //Send new product data to the backend
       await createProduct({
         name: formData.name,
         description: formData.description,
@@ -41,11 +38,11 @@ function AdminPortal() {
   };
 
   return (
-    <div className="admin-portal">
-      <div className="form-container">
+    <div className="admin-portal" data-testid="admin-portal">
+      <div className="form-container" data-testid="form-container">
         <h2>Add New Product</h2>
-        {message && <p className="message">{message}</p>}
-        <form onSubmit={handleSubmit}>
+        {message && <p className="message" data-testid="form-message">{message}</p>}
+        <form onSubmit={handleSubmit} data-testid="add-product-form">
           <div className="form-group">
             <label>Product Name</label>
             <input
@@ -53,6 +50,7 @@ function AdminPortal() {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              data-testid="input-name"
               required
             />
           </div>
@@ -64,6 +62,7 @@ function AdminPortal() {
               name="description"
               value={formData.description}
               onChange={handleChange}
+              data-testid="input-description"
               required
             />
           </div>
@@ -75,6 +74,7 @@ function AdminPortal() {
               name="image"
               value={formData.image}
               onChange={handleChange}
+              data-testid="input-image"
               required
             />
           </div>
@@ -87,11 +87,12 @@ function AdminPortal() {
               step="0.01"
               value={formData.price}
               onChange={handleChange}
+              data-testid="input-price"
               required
             />
           </div>
 
-          <button type="submit" className="submit-btn">Submit</button>
+          <button type="submit" className="submit-btn" data-testid="submit-btn">Submit</button>
         </form>
       </div>
     </div>
