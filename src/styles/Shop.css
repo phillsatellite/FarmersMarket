@@ -18,28 +18,14 @@
   max-width: 400px;
   padding: 12px 20px;
   border-radius: 25px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.732);
+  border: 1px solid #3A3A3A;
+  background-color: #2C2C2C;
   font-size: 16px;
-  color: black;
+  color: #E0E0E0;
 }
 
 .search-input::placeholder {
-  color: #7e7163;
-}
-
-.locations {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.locations label {
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
+  color: #A0A0A0;
 }
 
 .products-grid {
@@ -51,15 +37,17 @@
 
 .product-card {
   background-color: #1E1E1E;
-  color: white;
+  color: #E0E0E0;
   padding: 20px;
   border-radius: 8px;
+  border: 1px solid #3A3A3A;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, border-color 0.2s;
 }
 
 .product-card:hover {
   transform: scale(1.05);
+  border-color: #66BB6A;
 }
 
 .product-image {
@@ -77,11 +65,13 @@
 .product-card p {
   margin: 5px 0;
   font-size: 14px;
+  color: #A0A0A0;
 }
 
 .price {
   font-weight: bold;
   margin-top: 10px;
+  color: #66BB6A;
 }
 
 .modal-overlay {
@@ -98,16 +88,17 @@
 }
 
 .modal-content {
-  background-color: #1E1E1E;
+  background-color: #2C2C2C;
   padding: 30px;
   border-radius: 10px;
   width: 90%;
   max-width: 500px;
+  border: 1px solid #3A3A3A;
 }
 
 .modal-content h2 {
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #E0E0E0;
 }
 
 .edit-form .form-group {
@@ -117,7 +108,7 @@
 .edit-form label {
   display: block;
   margin-bottom: 5px;
-  color: #2a2a2a;
+  color: #A0A0A0;
   font-weight: bold;
 }
 
@@ -125,11 +116,11 @@
 .edit-form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #8a7a6a;
+  border: 1px solid #3A3A3A;
   border-radius: 4px;
   font-size: 16px;
-  background-color: white;
-  color: #2a2a2a ;
+  background-color: #1E1E1E;
+  color: #E0E0E0;
   box-sizing: border-box;
 }
 
@@ -141,8 +132,8 @@
 .edit-form input:focus,
 .edit-form textarea:focus {
   outline: none;
-  border-color: #000000;
-  box-shadow: noen
+  border-color: #66BB6A;
+  box-shadow: 0 0 0 2px rgba(102, 187, 106, 0.2);
 }
 
 .modal-buttons {
@@ -162,7 +153,7 @@
 }
 
 .save-btn {
-  background-color: #4a8a4a;
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -185,5 +176,5 @@
 }
 
 .cancel-btn:hover {
-  background-color: #7a3a3a;
+  background-color: #616161;
 }
